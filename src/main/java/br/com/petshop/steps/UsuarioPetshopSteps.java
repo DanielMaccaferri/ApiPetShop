@@ -27,7 +27,7 @@ public class UsuarioPetshopSteps {
 		usuario.setUserStatus(userStatus);
 
 		String json = gson.toJson(usuario);
-		verbos.postEndPoint("https://petstore.swagger.io/user", json);
+		verbos.postEndPoint("https://petstore.swagger.io/v2/user", json);
 	}
 	
 
